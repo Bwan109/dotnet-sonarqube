@@ -35,5 +35,4 @@ jobs:
         dotnet sonarscanner begin /k:${{ secrets.SONAR_PROJECT_KEY }} /d:sonar.host.url=${{ secrets.SONAR_HOST_URL }} /d:sonar.login=${{ secrets.SONAR_LOGIN_TOKEN }}
         dotnet build
         dotnet sonarscanner end /d:sonar.login=${{ secrets.SONAR_LOGIN_TOKEN }}
-      env:
-        ASPNETCORE_ENVIRONMENT: Development
+   \
